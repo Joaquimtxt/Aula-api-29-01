@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Consumo de API Rest</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+      integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="conteudo" class="container text-center text-light">
+      <h1 class="mt-3">Exemplo de consumo de API</h1>
+      <p class="mb-3">
+        O Objetivo desse exemplo é consumir dados de uma API Rest e exibir esses
+        dados em uma página HTML Dinâmica
+      </p>
+      <hr class="my-3"/>
+
+      <h2>Dados da API</h2>
+      <button id="btnbuscar"  class="btn btn-outline-info btn-l my-3" onclick="carregarDados()">Buscar dados</button>
+      <div id="div-erro"></div>
+      <div id="div-dados">
+        <table class="table table-responsive table-striped table-hover my-3">
+          <thead class="table-dark">
+            <tr>
+              <th>Código</th>
+              <th>Nome da moeda</th>
+            </tr>
+          </thead>
+          <tbody id="linhas">
+            <!-- Aqui serão inseridas as linhas da tabela-->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"
+    integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="js/script.js"></script>
+</html>
